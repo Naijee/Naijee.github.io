@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>OSI七層架構 | Hexo</title>
+  <meta name="keywords" content=" OSI , Internet ">
+  <meta name="description" content="OSI七層架構 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="OSI 七層架構 OSI(Open System Interconnection Reference Model)是由國際標準化組織(ISO)針對網路架構互連所頂定的一個標準。依據網路運作的方式，將OSI分成七層，由下往上分別為實體層(Physical Layer)，連結層(Data Link Layer)，網路層(Network Layer)，傳輸層(Transport Layer)，會議層(S">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OSI七層架構">
+<meta property="og:url" content="http://yoursite.com/2020/04/18/OSI-seven/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="OSI 七層架構 OSI(Open System Interconnection Reference Model)是由國際標準化組織(ISO)針對網路架構互連所頂定的一個標準。依據網路運作的方式，將OSI分成七層，由下往上分別為實體層(Physical Layer)，連結層(Data Link Layer)，網路層(Network Layer)，傳輸層(Transport Layer)，會議層(S">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/04/18/OSI-seven/OSI_Seven.jpg">
+<meta property="article:published_time" content="2020-04-18T08:37:49.000Z">
+<meta property="article:modified_time" content="2020-04-18T11:48:36.301Z">
+<meta property="article:author" content="Naijee">
+<meta property="article:tag" content="OSI">
+<meta property="article:tag" content="Internet">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/18/OSI-seven/OSI_Seven.jpg">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/sublime.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Naijee</span>
+</div>
+
+<div class="icon">
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(2)</small></div></li>
+    
+        
+            
+            <li><div data-rel="Internet">Internet<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="2">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode === 13){return false;}">
+        <input id="local-search-input" class="search" type="text" placeholder="Search..." />
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color4">OSI</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Internet</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">3-hexo</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="Internet "
+           href="/2020/04/18/OSI-seven/"
+           data-tag="OSI,Internet"
+           data-author="" >
+            <span class="post-title" title="OSI七層架構">OSI七層架構</span>
+            <span class="post-date" title="2020-04-18 16:37:49">2020/04/18</span>
+        </a>
+        
+        <a  class=""
+           href="/2020/04/17/hello-world/"
+           data-tag="hexo,3-hexo"
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2020-04-17 21:02:22">2020/04/17</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-OSI-seven" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">OSI七層架構</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="Internet">Internet</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">OSI</a>
+            
+            <a class="color4">Internet</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-04-18 19:48:36'>2020-04-18 16:37</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OSI-七層架構"><span class="toc-text">OSI 七層架構</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一層-實體層-Physical-Layer"><span class="toc-text">第一層-實體層(Physical Layer)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二層-連結層-Data-Link-Layer"><span class="toc-text">第二層-連結層(Data Link Layer)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第三層-網路層-Network-Layer"><span class="toc-text">第三層-網路層(Network Layer)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第四層-傳輸層-Transport-Layer"><span class="toc-text">第四層-傳輸層(Transport Layer)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第五層-會議層-Session-Layer"><span class="toc-text">第五層-會議層(Session Layer)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第六層-展示層-Presentation-Layer"><span class="toc-text">第六層-展示層(Presentation Layer)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第七層-應用層-Application-Layer"><span class="toc-text">第七層-應用層(Application Layer)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#資料參考來源"><span class="toc-text">資料參考來源</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#wiki-https-zh-wikipedia-org-wiki-OSI-E6-A8-A1-E5-9E-8B"><span class="toc-text">wiki - https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;OSI%E6%A8%A1%E5%9E%8B</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#什麼是OSI的7層架構？和常聽到的Layer-7有關？-https-www-ithome-com-tw-node-47085"><span class="toc-text">什麼是OSI的7層架構？和常聽到的Layer 7有關？- https:&#x2F;&#x2F;www.ithome.com.tw&#x2F;node&#x2F;47085</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#http-blog2-cyhs-tp-edu-tw-teacher-get-107-OSI-Network-pdf"><span class="toc-text">http:&#x2F;&#x2F;blog2.cyhs.tp.edu.tw&#x2F;teacher&#x2F;get&#x2F;107&#x2F;OSI_Network.pdf</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="OSI-七層架構"><a href="#OSI-七層架構" class="headerlink" title="OSI 七層架構"></a>OSI 七層架構</h1><p><img src="OSI_Seven.jpg" alt="OSI 網路七層架構圖" title="OSI 網路七層架構圖"></p>
+<p>OSI(Open System Interconnection Reference Model)是由國際標準化組織(ISO)針對網路架構互連所頂定的一個標準。依據網路運作的方式，將OSI分成七層，由下往上分別為實體層(Physical Layer)，連結層(Data Link Layer)，網路層(Network Layer)，傳輸層(Transport Layer)，會議層(Session Layer)，展示層(Presentation Layer)，應用層(Application Layer)。</p>
+<h2 id="第一層-實體層-Physical-Layer"><a href="#第一層-實體層-Physical-Layer" class="headerlink" title="第一層-實體層(Physical Layer)"></a>第一層-實體層(Physical Layer)</h2><p>實體層是七層架構最底部的一層，主要的功用就是實體線路的傳輸，透過物理線材傳遞0與1的電子訊號，使其形成網路。在實體層中的規範包含了規格、傳輸速度等等，用來確保訊號可以在不同的物理媒介上進行傳輸。</p>
+<p><em><strong>乙太網 數據機 電力線通訊 同步光網路 G.709 光導纖維 同軸電纜 雙絞線</strong></em></p>
+<h2 id="第二層-連結層-Data-Link-Layer"><a href="#第二層-連結層-Data-Link-Layer" class="headerlink" title="第二層-連結層(Data Link Layer)"></a>第二層-連結層(Data Link Layer)</h2><p>負責網路尋址、錯誤偵測和改錯。將資料封裝成資料訊框(Data frame)並包含MAC Address，讓資料在傳輸的時候，可以明確地找到傳輸的目的地，這組Address是獨一無二的。</p>
+<p><em><strong>WiFi ARP 乙太網路 PPP PPPoE</strong></em></p>
+<h2 id="第三層-網路層-Network-Layer"><a href="#第三層-網路層-Network-Layer" class="headerlink" title="第三層-網路層(Network Layer)"></a>第三層-網路層(Network Layer)</h2><p>提供路由和尋址的功能，使兩終端系統能夠互連且決定最佳路徑，並具有一定的擁塞控制和流量控制的能力 <a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E5%B1%82" target="_blank" rel="noopener">(By Wiki)</a>，給予IP Address，讓封包在傳輸時得以知道誰是接收者</p>
+<p><em><strong>IPv4 IPv6 ICMP IGMP</strong></em></p>
+<h2 id="第四層-傳輸層-Transport-Layer"><a href="#第四層-傳輸層-Transport-Layer" class="headerlink" title="第四層-傳輸層(Transport Layer)"></a>第四層-傳輸層(Transport Layer)</h2><p>提供協定，使兩端可以成功彼此進行通訊</p>
+<p><em><strong>TCP UDP</strong></em></p>
+<h2 id="第五層-會議層-Session-Layer"><a href="#第五層-會議層-Session-Layer" class="headerlink" title="第五層-會議層(Session Layer)"></a>第五層-會議層(Session Layer)</h2><p>負責建立網路連線並等候資料傳輸結束時，切斷連線</p>
+<p><em><strong>這層與第六層展示層定義較為模糊，其功能在應用層也皆被實作</strong></em></p>
+<h2 id="第六層-展示層-Presentation-Layer"><a href="#第六層-展示層-Presentation-Layer" class="headerlink" title="第六層-展示層(Presentation Layer)"></a>第六層-展示層(Presentation Layer)</h2><p>將上層的資料轉換成正確的語法，如ASCII以及UTF-8</p>
+<p><em><strong>這層與第五層-會議層定義較為模糊，其功能在應用層也皆被實作</strong></em></p>
+<h2 id="第七層-應用層-Application-Layer"><a href="#第七層-應用層-Application-Layer" class="headerlink" title="第七層-應用層(Application Layer)"></a>第七層-應用層(Application Layer)</h2><p>與使用者所接觸的的介面做結合，提供使用者簡單地進行網路服務</p>
+<p><em><strong>DHCP HTTP FTP DNS</strong></em></p>
+<h2 id="資料參考來源"><a href="#資料參考來源" class="headerlink" title="資料參考來源"></a>資料參考來源</h2><h5 id="wiki-https-zh-wikipedia-org-wiki-OSI-E6-A8-A1-E5-9E-8B"><a href="#wiki-https-zh-wikipedia-org-wiki-OSI-E6-A8-A1-E5-9E-8B" class="headerlink" title="wiki - https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B"></a>wiki - <a href="https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B</a></h5><h5 id="什麼是OSI的7層架構？和常聽到的Layer-7有關？-https-www-ithome-com-tw-node-47085"><a href="#什麼是OSI的7層架構？和常聽到的Layer-7有關？-https-www-ithome-com-tw-node-47085" class="headerlink" title="什麼是OSI的7層架構？和常聽到的Layer 7有關？- https://www.ithome.com.tw/node/47085"></a>什麼是OSI的7層架構？和常聽到的Layer 7有關？- <a href="https://www.ithome.com.tw/node/47085" target="_blank" rel="noopener">https://www.ithome.com.tw/node/47085</a></h5><h5 id="http-blog2-cyhs-tp-edu-tw-teacher-get-107-OSI-Network-pdf"><a href="#http-blog2-cyhs-tp-edu-tw-teacher-get-107-OSI-Network-pdf" class="headerlink" title="http://blog2.cyhs.tp.edu.tw/teacher/get/107/OSI_Network.pdf"></a><a href="http://blog2.cyhs.tp.edu.tw/teacher/get/107/OSI_Network.pdf" target="_blank" rel="noopener">http://blog2.cyhs.tp.edu.tw/teacher/get/107/OSI_Network.pdf</a></h5>
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。 </span>
+    </div>
+</article>
+
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>OSI七層架構</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="Naijee">Naijee</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-04-18, 16:37:49</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-18, 19:48:36</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/18/OSI-seven/" title="OSI七層架構">http://yoursite.com/2020/04/18/OSI-seven/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 Yelog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#OSI','#Internet','#hexo','#3-hexo',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
